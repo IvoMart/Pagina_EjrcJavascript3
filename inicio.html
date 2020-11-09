@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VENTANAS JS - WindowPrompt</title>
+</head>
+
+<body>
+
+    <h1>W E N O</h1>
+
+    <script>
+        //  Instancia adicional
+        var nombre = ""
+
+        class UX {
+            bienvenida() {
+                nombre = window.prompt("Hola por favor indicanos tu nombre a continuación:   ", "My name is JohnDoe")
+
+            }
+        }
+        const ux = new UX();
+        ux.bienvenida(nombre)
+        console.log(nombre)
+        alert(`Bienvenid@ ${nombre}`)
+    </script>
+
+</body>
+
+</html>
